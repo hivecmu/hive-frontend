@@ -1,41 +1,28 @@
 ## hive-frontend
 
 ### Prerequisites
-- Node.js 18.18+ or 20+ (LTS recommended)
-- npm 9+ (uses `package-lock.json`)
+- **Node.js**: 18 or later
+- **npm**: 9 or later
 
 ### Install dependencies
 ```bash
 npm install
 ```
 
-### Run in development
+### Start the dev server
 ```bash
 npm run dev
 ```
-Open `http://localhost:3000`.
+Open `http://localhost:5173` in your browser.
 
-### Build and run in production
+### Build for production
 ```bash
 npm run build
-npm run start
 ```
+The build output goes to `dist/`.
 
-### Lint
+### Preview the production build
 ```bash
-npm run lint
+npx vite preview
 ```
-
-### Manage dependencies
-- Add runtime dependency: `npm install <package>`
-- Add dev dependency: `npm install -D <package>`
-- Remove dependency: `npm uninstall <package>`
-
-
-### Stack
-- Next.js 15, React 18
-- Tailwind CSS, PostCSS, Autoprefixer
-
-### References
-- Next.js system requirements: [nextjs.org](https://nextjs.org/docs/getting-started/installation#system-requirements)
-- Tailwind CSS install: [tailwindcss.com](https://tailwindcss.com/docs/installation)
+Then open the printed local URL, usually `http://localhost:4173`.
