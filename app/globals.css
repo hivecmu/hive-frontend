@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 17 18 20;
+  --foreground: 229 231 235;
+  --muted: 107 114 128;
+  --accent: 99 102 241;
+  --sidebar: 31 32 35;
+  --sidebar-foreground: 209 213 219;
+}
+
+* { box-sizing: border-box; }
+html, body, #__next { height: 100%; }
+
+
